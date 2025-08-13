@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About Me – Media Page</title>
+  </head>
+  <body>
+    <h1>A Powerful Message About Me</h1>
+
+    <h2>Responsive Picture of Me</h2>
+    <picture>
+      <source media="(min-width: 1024px)" srcset="media/profile pic.jpg" />
+      <source media="(min-width: 768px)" srcset="media/profile pic2.jpg" />
+      <source media="(max-width: 767px)" srcset="media/profile pic3.jpg" />
+      <img src="media/profile pic.jpg" alt="A picture of Promise Nwankwo" />
+    </picture>
+
+    <h2>Audio Message</h2>
+    <audio controls>
+      <source src="media/voice.opus" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <h2>Video Introduction</h2>
+    <video width="320" height="240" controls>
+      <source src="media/video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <h2>PDF About Me</h2>
+    <embed
+      src="media/BIOGRAPHY.pdf"
+      type="application/pdf"
+      width="600"
+      height="400"
+    />
+
+    <h3>Navigation</h3>
+    <p>
+      <a href="index.html">Back to Profile</a> |
+      <a href="table.html">View AltSchool Courses Table</a>
+    </p>
+  </body>
+</html>
